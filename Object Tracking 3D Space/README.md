@@ -1,14 +1,12 @@
-# SFND 3D Object Tracking
+# 3D Object Tracking
 
-Welcome to the final project of the camera course. By completing all the lessons, you now have a solid understanding of keypoint detectors, descriptors, and methods to match them between successive images. Also, you know how to detect objects in an image using the YOLO deep-learning framework. And finally, you know how to associate regions in a camera image with Lidar points in 3D space. Let's take a look at our program schematic to see what we already have accomplished and what's still missing.
+In this project, I developed a way to match 3D objects over time by using keypoint correspondences and then I computed two estimates for TTC (Time To Collision) based on Lidar measurements and camera image keypoints. The objects in each image are identified using YOLO deep-learning framework which generates bounding boxes with a certain confidence level. In the pipeline the bounding boxes in each image frame are matched to track objects from frame to frame. The illustration below shows bounding boxes identifying objects in a sequence of images.
 
-<img src="images/course_code_structure.png" width="779" height="414" />
+![Alt Text](https://media.giphy.com/media/EfT9Da1keQ2CwKBXjs/giphy.gif)
 
-In this final project, you will implement the missing parts in the schematic. To do this, you will complete four major tasks: 
-1. First, you will develop a way to match 3D objects over time by using keypoint correspondences. 
-2. Second, you will compute the TTC based on Lidar measurements. 
-3. You will then proceed to do the same using the camera, which requires to first associate keypoint matches to regions of interest and then to compute the TTC based on those matches. 
-4. And lastly, you will conduct various tests with the framework. Your goal is to identify the most suitable detector/descriptor combination for TTC estimation and also to search for problems that can lead to faulty measurements by the camera or Lidar sensor. In the last course of this Nanodegree, you will learn about the Kalman filter, which is a great way to combine the two independent TTC measurements into an improved version which is much more reliable than a single sensor alone can be. But before we think about such things, let us focus on your final project in the camera course. 
+The objective of this project is to estimate the Time-To-Collision (TTC) fromt the preceding vehicle. Estimates are made from LiDAR data points and by tracking objects in camera images. In order to do so and make computation simpler the pipeline only focuses on the preceding vehicle by processing LiDAR points and Camera image keypoints present within a ROI around the preceding vehicle. In the illustration below TTC estimates are overlayed on image frames with bounding box around the preceding vehicle and LiDAR point projected in to the camera frame within the bounding boxes.
+
+![Alt Text](https://media.giphy.com/media/APzLCb6rjOgc8ssqUZ/giphy.gif)
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
