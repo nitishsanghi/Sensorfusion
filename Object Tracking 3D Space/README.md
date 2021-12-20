@@ -3,6 +3,7 @@
 In this project, I developed a way to match 3D objects over time by using keypoint correspondences. Second, I computed the TTC (Time To Collision) based on Lidar measurements and camera image keypoints.
 
 ![Alt Text](https://media.giphy.com/media/EfT9Da1keQ2CwKBXjs/giphy.gif)
+![Alt Text](https://media.giphy.com/media/APzLCb6rjOgc8ssqUZ/giphy.gif)
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
