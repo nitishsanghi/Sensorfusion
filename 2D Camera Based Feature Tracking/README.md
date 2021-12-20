@@ -5,9 +5,14 @@
 Objective and Overview
 In this "Feature tracking" project, I implemented a few detectors, descriptors, and matching algorithms using OPENCV C++ libraries. The project consists of three main components: First, keypoint detection in which a feature detection algorithm identifies probable keypoint features. Second is descriptor extraction for keypoints found by the detectors. And third and final component of descriptor matching between image frames. List of detectors, descriptors, and matching functions implemented below.
 
-Keypoint Detectors: SHI-TOMASI, HARRIS, FAST, BRISK, ORB, AKAZE, and SIFT
-Descriptor Extraction: BRISK, BRIEF, FREAK, ORB, AKAZE, SIFT
-Matching: Brute-force and FLANN approach couple with distance ratio filter
+* Keypoint Detectors: SHI-TOMASI, HARRIS, FAST, BRISK, ORB, AKAZE, and SIFT
+* Descriptor Extraction: BRISK, BRIEF, FREAK, ORB, AKAZE, SIFT
+* Matching: Brute-force and FLANN approach couple with distance ratio filter
+
+Both traditional and modern/binary detectors/descriptors have been evaluated in this project. The gif below is made up of consecutive image frames which were processed through a FAST keypoint detector.
+![](<iframe src="https://giphy.com/embed/4tRk2t8sL0XwIKuNby" width="480" height="144" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/4tRk2t8sL0XwIKuNby">via GIPHY</a></p>)
+
+
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
