@@ -10,7 +10,7 @@ In this "Feature tracking" project, I implemented a few detectors, descriptors, 
 * Matching: Brute-force and FLANN approach couple with distance ratio filter
 
 Both traditional and modern/binary detectors/descriptors have been evaluated in this project. The gif below is made up of consecutive image frames which were processed through a FAST keypoint detector.
-![](<iframe src="https://giphy.com/embed/4tRk2t8sL0XwIKuNby" width="480" height="144" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/4tRk2t8sL0XwIKuNby">via GIPHY</a></p>)
+![](<div style="width:100%;height:0;padding-bottom:30%;position:relative;"><iframe src="https://giphy.com/embed/4tRk2t8sL0XwIKuNby" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/4tRk2t8sL0XwIKuNby">via GIPHY</a></p>)
 
 
 
