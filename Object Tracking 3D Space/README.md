@@ -1,4 +1,4 @@
-# SFND 3D Object Tracking
+# 3D Object Tracking
 
 In this project, I developed a way to match 3D objects over time by using keypoint correspondences and then I computed two estimates for TTC (Time To Collision) based on Lidar measurements and camera image keypoints. The objects in each image are identified using YOLO deep-learning framework which generates bounding boxes with a certain confidence level. In the pipeline the bounding boxes in each image frame are matched to track objects from frame to frame. The illustration below shows bounding boxes identifying objects in a sequence of images.
 
