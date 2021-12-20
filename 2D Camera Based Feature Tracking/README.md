@@ -2,14 +2,12 @@
 
 <img src="images/keypoints.png" width="820" height="248" />
 
-The idea of the camera course is to build a collision detection system - that's the overall goal for the Final Project. As a preparation for this, you will now build the feature tracking part and test various detector / descriptor combinations to see which ones perform best. This mid-term project consists of four parts:
+Objective and Overview
+In this "Feature tracking" project, I implemented a few detectors, descriptors, and matching algorithms using OPENCV C++ libraries. The project consists of three main components: First, keypoint detection in which a feature detection algorithm identifies probable keypoint features. Second is descriptor extraction for keypoints found by the detectors. And third and final component of descriptor matching between image frames. List of detectors, descriptors, and matching functions implemented below.
 
-* First, you will focus on loading images, setting up data structures and putting everything into a ring buffer to optimize memory load. 
-* Then, you will integrate several keypoint detectors such as HARRIS, FAST, BRISK and SIFT and compare them with regard to number of keypoints and speed. 
-* In the next part, you will then focus on descriptor extraction and matching using brute force and also the FLANN approach we discussed in the previous lesson. 
-* In the last part, once the code framework is complete, you will test the various algorithms in different combinations and compare them with regard to some performance measures. 
-
-See the classroom instruction and code comments for more details on each of these parts. Once you are finished with this project, the keypoint matching part will be set up and you can proceed to the next lesson, where the focus is on integrating Lidar points and on object detection using deep-learning. 
+Keypoint Detectors: SHI-TOMASI, HARRIS, FAST, BRISK, ORB, AKAZE, and SIFT
+Descriptor Extraction: BRISK, BRIEF, FREAK, ORB, AKAZE, SIFT
+Matching: Brute-force and FLANN approach couple with distance ratio filter
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
