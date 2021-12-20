@@ -9,10 +9,13 @@ In this "Feature tracking" project, I implemented a few detectors, descriptors, 
 * Descriptor Extraction: BRISK, BRIEF, FREAK, ORB, AKAZE, SIFT
 * Matching: Brute-force and FLANN approach couple with distance ratio filter
 
-Both traditional and modern/binary detectors/descriptors have been evaluated in this project. The gif below is made up of consecutive image frames which were processed through a FAST keypoint detector.
+Both traditional and modern/binary detectors/descriptors have been evaluated in this project. The illustration below is made up of consecutive image frames which were processed through a FAST keypoint detector.
 
 ![Alt Text](https://media.giphy.com/media/4tRk2t8sL0XwIKuNby/giphy.gif)
 
+Next the keypoints for each image are passed through a descriptor function to extract descriptions for the keypoints for feature matching. Feature matching compares the descriptors for keypoints in two images to match features. For comparison the feature matches computes a "distance" value for the descriptors and matches keypoints whose descriptors meet the "distance" criteria. The illustration below has consecutive frames side by side with features matched.
+
+![Alt Text](https://media.giphy.com/media/RntFWhWY7bKlkq5ifH/giphy.gif)
 
 
 ## Dependencies for Running Locally
