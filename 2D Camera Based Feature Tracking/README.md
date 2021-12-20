@@ -13,7 +13,7 @@ Both traditional and modern/binary detectors/descriptors have been evaluated in 
 
 ![Alt Text](https://media.giphy.com/media/4tRk2t8sL0XwIKuNby/giphy.gif)
 
-Next the keypoints for each image are passed through a descriptor function to extract descriptions for the keypoints for feature matching. Feature matching compares the descriptors for keypoints in two images to match features. For comparison the feature matches computes a "distance" value for the descriptors and matches keypoints whose descriptors meet the "distance" criteria. The illustration below has consecutive frames side by side with features matched.
+Next the keypoints for each image are passed through a descriptor function to extract descriptions for the keypoints for feature matching. Feature matching compares the descriptors for keypoints in two images to match features. For comparison the feature matches computes a "distance" value for the descriptors and matches keypoints whose descriptors meet the "distance" criteria. The illustration below has consecutive frames side by side with features matched using the BRISK descriptor + Brute-force with k-nearest neighbor matches passed through the distance ratio filter.
 
 ![Alt Text](https://media.giphy.com/media/RntFWhWY7bKlkq5ifH/giphy.gif)
 
