@@ -1,5 +1,5 @@
 # LiDAR Object Detection
-
+In this project a pipeline implemented to process LiDAR point cloud data using PCL data structures and custom implemented segmentation and clustering functions. The segmentation is done using RANSAC algorithm to segment point clouds of objects from those belonging to the ground/road followed by clustering of object point cloud in to object clusters using kd-tree data structure and a euclidean distance metric. Then bounding boxes for object clusters are found for representation.
 ![Alt Text](https://media.giphy.com/media/vIpGW8I6sYJRHKXeUJ/giphy.gif)
 
 
